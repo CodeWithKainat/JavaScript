@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //     Task 6:
+    // Create an Array that contains different products, and get input from the user in which you
+    // ask your user to give the position of that element he/she wants. Now remove that Item
+    // from your array and console the removed item, Also display the remaining items in the
+    // array and total number of items remaining.
+
+  
+    let products = ["Mars", "Rose", "Snickers", "Magnum", "Kitkat"];
+
+    let position = +(prompt("Enter the position (1-5) of the product you want:"));
+
+    // Check the user input is valid
+    if (position < 1 || position > products.length) {
+      console.log("Invalid input. Please enter a valid position.");
+    } 
+    else {
+      let removedItem = products.splice(position - 1, 1);
+
+      console.log("Removed item: " + removedItem);
+
+      console.log("Remaining items: " + products);
+
+      console.log("Total remaining items: " + products.length);
+    }
+  </script>
+</body>
+
+</html>

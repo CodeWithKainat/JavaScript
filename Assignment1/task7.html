@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //         Task 7:
+        // Create a program that asks the user for their nationality, gender, and age using the prompt
+        // function. The program should then use nested if-else statements to determine if the
+        // person is eligible to vote.
+        // First, the program should check if the person is Pakistani or Indian. If they are not, the
+        // program should display a message saying they are not eligible to vote.
+        // If they are Pakistani or Indian, the program should then check their gender. If the person is
+        // male and over the age of 18, they are eligible to vote. If the person is female and over the
+        // age of 18, the program should ask if they are married. If they are married, they are eligible
+        // to vote. If they are not married, they are not eligible to vote.
+        // If the person is under 18, the program should display a message saying they are not eligible
+        // to vote
+
+        let nationality = prompt("what is your nationality?").toLowerCase();
+        let age = prompt("what is your age?").toLowerCase();
+        let gender = prompt("tell your gender").toLowerCase();
+
+        if (nationality === "pakistani" || nationality === "indian") {
+            alert("you are eligible")
+            if (gender === "male" && age >= 18) {
+                alert("you are eligible to vote")
+            }
+            else {
+                alert("You are not eligible")
+            }
+        }
+
+
+        else if (gender === "female" && age >= 18) {
+            let fem = prompt("are you married?").toLowerCase();
+            if (fem === "yes" && age >= 18) {
+                alert("you are eligiblr to vote")
+            }
+            else {
+                alert("You are not eligible")
+            }
+        }
+
+        
+        else {
+            alert("You are not eligible")
+        }
+    </script>
+
+</body>
+
+</html>

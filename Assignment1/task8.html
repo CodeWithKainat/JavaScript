@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+//     Task 8:
+// You have an array of that contains the name of Pakistani Teams Player selected for
+// WorldCup (15 Players) named as WorldCupSquad. Now tomorrow we have a match with
+// India, So make an array of final team players (11 Players) that will be playing in tomorrows
+// match from the WorldCupSquad array.
+// (Hint : Make sure it should not disturb the array that contains 15 players instead you have
+// to make a copy of this array)
+
+let worldCupSquad = ["Muhammad Rizwan" ,"Babar Azam", "Shaheen Afridi", "Imad Wasim", "Muhammad Nawaz", "Wahab Riaz", "Saim Ayub", "Hassan Ali", "Muhammad Hasnain", "Shadab Khan", "Naseem Shah", "Iftikhar Ahmed", "M Harid", "Ahmed Shehzad", "Muhammad Amir"];
+
+let finalTeam = worldCupSquad.slice(0, 11);
+
+console.log("WorldCupSquad:", worldCupSquad);
+console.log("FinalTeamPlayers:", finalTeam);
+
+
+
+  </script>  
+</body>
+</html>
